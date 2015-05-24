@@ -1,23 +1,24 @@
 <!DOCTYPE html>
 <html>
-<head>
-  <title> Guessing Game </title>
-  <link rel="stylesheet" href="GuessingGame.css">
-</head>
-
-<!DOCTYPE html>
-<html lang="en">
+  <head>
+    <title> Guessing Game </title>
+    <link rel="stylesheet" href="GuessingGame.css">
+    <script type="text/javascript" src="jquery-1.11.3.js"></script>
+    <script type="text/javascript" src="GuessingGame.js"></script>
+  </head>
   <body>
-            <h2>Guess A Number</h2>
-           <div>
-             <input type="text" placeholder='Guess a Number 1-100'/>
-             <h3></h3>
-             <button>Submit</button>
-           </div>
-           <div>
-             <button>Play Again</button>
-           </div>
-           <h3> 5 Guesses Remaining </h3>
+    <div id="binarySearchTable"></div>
+    <h2 id="header">Guess A Number</h2>
+    <div id="guess">
+      <input id="guessField" type="text" placeholder='Guess a Number 1-100'/>
+      <h3 id="feedbackTemp"></h3>
+      <h3 id="feedbackDirection"></h3>
+      <button id="submit">Submit</button>
+     </div>
+     <div>
+      <button id="restart">Play Again</button>
+     </div>
+     <h3 id="numGuesses"> 5 Guesses Remaining </h3>
 
       </div>
     </div>
